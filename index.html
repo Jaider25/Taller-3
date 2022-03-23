@@ -103,28 +103,33 @@
     </div>
     <br>
 
-    <div id="tabla" class="container">
-      <h1 class="text-center text-ganger">Tabla registro de vacunacion</h1>
-          <div class="form-group">
-              <input class="form-control mb-2" id="Nombre" type="text" placeholder="Nombre">
-              <input class="form-control mb-2" id="Apellido" type="text" placeholder="Apellido">
-              <input class="form-control mb-2" id="Edad" type="num" placeholder="Edad">
-              <input class="form-control mb-2" id="Estas vacunado/da" type="text" placeholder="Estas vacunado/da">
-          </div>
-          <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">Nombre</th>
-                  <th scope="col">Apellido</th>
-                  <th scope="col">Edad</th>
-                  <th scope="col">Estas vacunado/da</th>
-                </tr>
-              </thead>
-              <tbody id="tabla">
-              </tbody>
-            </table>
-            <button onclick="tabla()" type="button" class="btn btn-success">Registrar</button>
+    <div class="container">
+
+      <div class="form-group">
+          <h1 class="text-center text-danger">Tabla de vacunacion</h1>
+      <input class="form-control mb-2" id="nombre" type="text" placeholder="Nombre">
+      <input class="form-control mb-2" id="apellido" type="text" placeholder="Apellido">
+      <input class="form-control mb-2" id="edad" type="text" placeholder="Edad">
+      <input class="form-control mb-2" id="estasvacunado" type="text" placeholder="estasvacunado">
+
+
       </div>
+
+      <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Nombre</th>
+              <th scope="col">Apellido</th>
+              <th scope="col">Edad</th>
+              <th scope="col">Estas vacunado</th>
+            </tr>
+          </thead>
+          <tbody id="tabla">
+          </tbody>
+        </table>
+        <button onclick="tabla()" type="button" class="btn btn-success">Guardar personas</button>
+
+  </div>
       <br>
 
       <div id="tienda" class="container">

@@ -75,6 +75,28 @@ function sto(){
 } 
 
 
+function tabla(){
+    const tabla = document.getElementById('tabla');
+    let nombre = document.getElementById('nombre').value;
+    let apellido = document.getElementById('apellido').value;
+    let edad = document.getElementById('edad').value;
+    let estasvacunado = document.getElementById('estasvacunado').value;
+
+
+
+    tabla.innerHTML+=`<tr>
+    <td>${nombre}</td>
+    <td>${apellido}</td>
+    <td>${edad}</td>
+    <td>${estasvacunado}</td>
+</tr>`
+document.getElementById('nombre').value="";
+document.getElementById('apellido').value="";
+document.getElementById('edad').value="";
+   
+}
+
+
 
 
 
